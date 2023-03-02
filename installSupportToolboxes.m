@@ -1,6 +1,6 @@
 function installSupportToolboxes
 % INSTALLSUPPORTTOOLBOXES installs all necessary toolboxes to operate the
-% EW309 corona function set.
+% turret simulation toolbox.
 
 toolboxNames = {...
     'Plotting',...

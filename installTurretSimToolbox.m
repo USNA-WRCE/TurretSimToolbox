@@ -1,4 +1,5 @@
 function installTurretSimToolbox(replaceExisting)
+% Install the turret simulation toolbox
 
 %% Install/Update required toolboxes
 installSupportToolboxes;
