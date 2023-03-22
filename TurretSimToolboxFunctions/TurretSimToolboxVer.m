@@ -4,10 +4,14 @@ function varargout = TurretSimToolboxVer
 %
 %   M. Kutzer, 14Apr2020, USNA
 
+% Update(s)
+%   22Mar2023 - Revised installation process to remove use of GitLFS
+%   22Mar2023 - Added example scripts to support IDETC paper submission
+
 A.Name = 'EW309 NERF Blaster & 1D Turret Simulation Toolbox';
-A.Version = '1.3.0';
+A.Version = '1.3.1';
 A.Release = '(R2019a)';
-A.Date = '28-Apr-2020';
+A.Date = '22-Mar-2023';
 A.URLVer = 1;
 
 msg{1} = sprintf('MATLAB %s Version: %s %s',A.Name, A.Version, A.Release);
