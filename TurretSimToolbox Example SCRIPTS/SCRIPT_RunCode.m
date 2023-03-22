@@ -74,7 +74,7 @@ im = getShotPatternImage(nShots);
 
 fig = figure('Name','Shot Pattern Image');
 img = imshow(im);
-axs = get('Parent',img);
+axs = get(img,'Parent');
 
 %% Evaluate performance
 TurretSimPerformanceEval;
