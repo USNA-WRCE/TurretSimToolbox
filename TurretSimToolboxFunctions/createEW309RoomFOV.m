@@ -158,6 +158,11 @@ yy = ylim(h.Axes);
 xlim(h.Axes,3*xx);
 ylim(h.Axes,2*yy);
 
+%% Include image resolution fields
+% This is a workaround for getFOVSnapshot.m
+h.vRes = 480;
+h.hRes = 640; 
+
 %% Show figure
 set(h.Figure, 'Visible','on'); % Show figure
 drawnow;
