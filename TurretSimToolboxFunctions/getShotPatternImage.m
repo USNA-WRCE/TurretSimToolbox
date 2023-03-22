@@ -12,7 +12,27 @@ function im = getShotPatternImage(varargin)
 %   im = GETSHOTPATTERNIMAGE(h,range,nShots) uses a pre-defined FOV 
 %   specified using the strucured array h. Use "createEW309RoomFOV.m".
 %
+%   M. Kutzer, 28Apr2020, USNA
+
+im = getShotPatternImageFIX(varargin{:});
+return;
+
+%% ORIGINAL CODE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GETSHOTPATTERNIMAGE creates a simulated image of a shot pattern on the SW
+% chalkboard of Ri080.
+%   im = GETSHOTPATTERNIMAGE(range,nShots) creates a simulated image of a 
+%   shot pattern and point of ain on an EW309 chalkboard. The variable 
+%   "range" must be specified in *centimeters*. The number of shots is  
+%   specified using "nShots". The variable "nShots" must be an integer 
+%   value greater than 0. 
+%
+%   im = GETSHOTPATTERNIMAGE(nShots) can only be run after getTargetImage.m
+%
+%   im = GETSHOTPATTERNIMAGE(h,range,nShots) uses a pre-defined FOV 
+%   specified using the strucured array h. Use "createEW309RoomFOV.m".
+%
 %   M. Kutzer, 01Apr2020, USNA
+
 
 %% Define global FOV simulation
 % Yes, I realize that globals are generally lazy coding, but I am doing
