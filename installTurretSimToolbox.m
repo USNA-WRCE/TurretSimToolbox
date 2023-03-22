@@ -4,6 +4,9 @@ function installTurretSimToolbox(replaceExisting)
 %% Install/Update required toolboxes
 installSupportToolboxes;
 
+%% Build figures
+buildFigures;
+
 %% Assign tool/toolbox specific parameters
 dirName = 'turretsim';
 
