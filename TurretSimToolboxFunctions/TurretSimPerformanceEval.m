@@ -19,11 +19,11 @@ ptc_nShots = findobj( h_s2a,'Type','patch');
 ptc_Target = findobj(h_aw2a,'Type','patch');
 
 %% Create figure
-fig = figure('Name','EW309corona Performance Summary','Units','Normalized',...
+fig = figure('Name','TurretSim Performance Summary','Units','Normalized',...
     'Position',[0,0,0.75,0.75]);
 centerfig(fig);
 axs = axes('Parent',fig);
-title(axs,'EW309corona Performance Summary');
+title(axs,'TurretSim Performance Summary');
 hold(axs,'on');
 daspect(axs,[1 1 1]);
 xlabel('x (mm)');
