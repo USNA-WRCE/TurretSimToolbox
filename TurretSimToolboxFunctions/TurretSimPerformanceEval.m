@@ -36,6 +36,10 @@ H_aw2a = get(h_aw2a,'Matrix');
 h_aw2a = triad('Parent',h_a,'Matrix',H_aw2a,'Visible','off');
 % Create a new shot pattern frame relative to the target "aim" frame
 H_s2a = get(h_s2a,'Matrix');
+if isempty(H_s2a)
+    warning('No shot pattern found! Please run getShotPatternImage.m before running this function.');
+    H_s2a = eye(4);
+end
 h_s2a = triad('Parent',h_a,'Matrix',H_s2a,'Visible','off');
 
 % Display target
