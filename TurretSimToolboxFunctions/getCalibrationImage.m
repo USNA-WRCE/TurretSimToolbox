@@ -1,27 +1,4 @@
 function im = getCalibrationImage(varargin)
-% GETCALIBRATIONIMAGE creates a simulated image of a shot pattern on the SW
-% chalkboard of Ri080.
-%   im = GETCALIBRATIONIMAGE(range,nShots) creates a simulated image of a 
-%   shot pattern and point of ain on an EW309 chalkboard. The variable 
-%   "range" must be specified in *centimeters*. The number of shots is  
-%   specified using "nShots". The variable "nShots" must be an integer 
-%   value greater than 0. 
-%
-%   im = GETCALIBRATIONIMAGE(nShots) can only be run after getTargetImage.m
-%
-%   im = GETCALIBRATIONIMAGE(h,range,nShots) uses a pre-defined FOV 
-%   specified using the strucured array h. Use "createEW309RoomFOV.m".
-%
-%   M. Kutzer, 28Apr2020, USNA
-
-%% Run "FIX" code
-im = getShotPatternImageFIX(varargin{:});
-return;
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% ORIGINAL CODE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % GETCALIBRATIONIMAGE creates a simulated image of a calibration grid on 
 % the SW chalkboard of the Ri080.
 %   im = GETCALIBRATIONIMAGE(range) creates a simulated image of a
